@@ -57,6 +57,11 @@ FusionEKF::~FusionEKF() {}
 
 void FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack) {
 
+  /* applying kalman filter on only one sensor
+  if (measurement_pack.sensor_type_ == MeasurementPackage::LASER) {
+    return;
+  }
+  */
 
   /*****************************************************************************
    *  Initialization
@@ -83,12 +88,11 @@ void FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack) {
       theta = measurement_pack.raw_measurements_[1];
       ro_dot = measurement_pack.raw_measurements_[2];
 
-      //ro_dot =
 
-      // why not velocity
       float px;
       float py;
 
+      // initializing px and py from ro and theta
       px = ro * cos(theta);
       py = ro * sin(theta);
 
