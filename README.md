@@ -15,11 +15,15 @@ In this project you will utilize a kalman filter to estimate the state of a movi
 * Compilation Result ./ExtendedKF can be found [here](https://github.com/hassmuha/CarND-Extended-Kalman-Filter-Project-Submit/tree/master/build)
 
 
-Simulator snapshot for Sensor Fusion Example (Both Radar and Lidar Measurements)
+### Simulator snapshot for Sensor Fusion Example (Both Radar and Lidar Measurements)
 ![alt text][image1]
 
-Simulator snapshot for LIDAR only Measurements
+---
+
+### Simulator snapshot for LIDAR only Measurements
 ![alt text][image2]
 
-Simulator snapshot for RADAR only Measurements
+---
+
+### Simulator snapshot for RADAR only Measurements
 ![alt text][image3]
