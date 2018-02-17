@@ -68,8 +68,7 @@ MatrixXd Tools::CalculateJacobian(const VectorXd& x_state) {
 	//check division by zero
   /**
   TODO:
-    * change this so that it will not return
-    op1 change the value of c1 to be minimum i.e. 0.0001
+    * change the value of c1 to be minimum i.e. 0.0001
 
   */
 	if(c1 < 0.0001){
